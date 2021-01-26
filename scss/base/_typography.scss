@@ -1,0 +1,43 @@
+//
+// Imports
+//
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+//
+// Top Banner Header
+//
+
+.topBanner__header {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 110%;
+  display: flex;
+  align-items: center;
+}
+
+//
+// Banner Copy
+//
+
+.bannerCopy__text {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 160%;
+}
+
+//
+// Learn More Button
+//
+
+.bannerButton__learnMore {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 160%;
+}

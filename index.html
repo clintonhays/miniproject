@@ -3,22 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Mini Project</title>
   </head>
   <body>
     <nav class="nav">
-      <div class="nav__logo">
-        <div class="nav__logo_rectangle1"></div>
-        <div class="nav__logo_rectangle2"></div>
+      <div class="logo">
+        <div class="logo_rectangle1"></div>
+        <div class="logo_rectangle2"></div>
       </div>
-      <ul class="nav__menu">
-        <li class="nav__menu__item"><a class="nav__menu__item_link" href="#help">Help</a></li>
-        <li class="nav__menu__item"><a class="nav__menu__item_link" href="#about">About</a></li>
-        <li class="nav__menu__item"><a class="nav__menu__item_link" href="#features">Features</a></li>
-        <li class="nav__menu__item"><a class="nav__menu__item_link" href="#signup">Signup</a></li>
+      <ul class="menu">
+        <li class="menu__item"><a class="menu__item_link" href="#help">Help</a></li>
+        <li class="menu__item"><a class="menu__item_link" href="#about">About</a></li>
+        <li class="menu__item"><a class="menu__item_link" href="#features">Features</a></li>
+        <li class="menu__item"><a class="menu__item_link" href="#signup">Signup</a></li>
       </ul>
-      <button class="nav__demoButton">Request Demo -></button>
+      <button class="demoButton">
+        Request Demo <span class="demoButton__polygon1"></span><span class="demoButton__polygon2"></span>
+      </button>
     </nav>
-    <div class="topBanner"></div>
+    <div class="topBanner">
+      <h1 class="topBanner__header">Save your data storage here.</h1>
+      <div class="bannerImage">
+        <div class="bannerImage__img"></div>
+      </div>
+      <div class="bannerCopy">
+        <p class="bannerCopy__text">
+          Data Warehouse is a data storage area that has been tested for security, so you can store your data here
+          safely but not be afraid of being stolen by others.
+        </p>
+      </div>
+      <div class="bannerButton">
+        <button class="bannerButton__learnMore">Learn more</button>
+      </div>
+    </div>
   </body>
 </html>
