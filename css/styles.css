@@ -1,4 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@keyframes strafe {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(8px);
+  }
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -34,7 +44,29 @@ body {
   line-height: 160%;
 }
 
+.info {
+  font-family: "Lato", sans-serif;
+}
+
+.info .info__header {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 130%;
+  color: #212353;
+}
+
+.info .info__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 160%;
+  color: #4b5d68;
+}
+
 .demoButton {
+  position: relative;
   height: 60px;
   width: 210px;
   margin-left: 418px;
@@ -42,6 +74,62 @@ body {
   background: #ffffff;
   box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
   border-radius: 50px;
+  cursor: pointer;
+}
+
+.demoButton .demoButton__arrow {
+  position: absolute;
+  top: 20px;
+  left: 161px;
+}
+
+.demoButton .demoButton__arrow .__polygon1 {
+  position: absolute;
+  width: 20px;
+  height: 1px;
+  top: 7px;
+  border: 2px solid #9c69e2;
+  background-color: #9c69e2;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+.demoButton .demoButton__arrow .__polygon2 {
+  position: absolute;
+  width: 14px;
+  height: 1px;
+  top: 3px;
+  left: 8px;
+  border: 2px solid #9c69e2;
+  background-color: #9c69e2;
+  box-sizing: border-box;
+  border-radius: 2px;
+  transform: rotate(45deg);
+}
+
+.demoButton .demoButton__arrow .__polygon3 {
+  position: absolute;
+  width: 14px;
+  height: 1px;
+  top: 11px;
+  left: 8px;
+  border: 2px solid #9c69e2;
+  background-color: #9c69e2;
+  box-sizing: border-box;
+  border-radius: 2px;
+  transform: rotate(-45deg);
+}
+
+.demoButton:hover, .demoButton:focus {
+  outline-color: #9c69e2;
+}
+
+.demoButton:hover .demoButton__arrow, .demoButton:focus .demoButton__arrow {
+  animation: strafe 0.8s infinite;
+}
+
+.demoButton:active {
+  transform: scale(0.95);
 }
 
 .bannerButton__learnMore {
@@ -54,12 +142,13 @@ body {
   background: #9c69e2;
   border-radius: 50px;
   color: white;
+  cursor: pointer;
 }
 
 nav {
   position: absolute;
   top: 47px;
-  left: 240px;
+  left: 15%;
   display: flex;
   align-items: center;
 }
@@ -124,5 +213,43 @@ nav {
   margin-top: 0;
   left: 240px;
   top: 471px;
+}
+
+.info {
+  position: relative;
+  width: 1117px;
+  height: 560px;
+  left: 240px;
+  top: 903.18px;
+  background: rgba(240, 99, 184, 0.15);
+  border-radius: 50px;
+}
+
+.info .info__img {
+  position: absolute;
+  width: 477px;
+  height: 504px;
+  left: 11px;
+  top: 31.82px;
+  background: url(/images/image2.svg);
+}
+
+.info .info__header {
+  position: absolute;
+  margin-top: 0;
+  margin-bottom: 40px;
+  width: 475px;
+  height: 100px;
+  left: 550px;
+  top: 125px;
+}
+
+.info .info__text {
+  position: absolute;
+  margin-top: 0;
+  width: 474px;
+  height: 170px;
+  left: 550px;
+  top: 265px;
 }
 /*# sourceMappingURL=styles.css.map */

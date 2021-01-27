@@ -41,3 +41,28 @@
   font-size: 19px;
   line-height: 160%;
 }
+
+//
+// Info Section
+//
+
+.info {
+  font-family: "Lato", sans-serif;
+
+  .info__header {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 130%;
+    color: #212353;
+  }
+
+  .info__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 160%;
+    color: #4b5d68;
+  }
+}

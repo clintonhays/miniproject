@@ -1,0 +1,52 @@
+//
+// Arrow
+//
+
+@mixin polygon1 {
+  position: absolute;
+  width: 20px;
+  height: 1px;
+  top: 7px;
+  border: 2px solid #9c69e2;
+  background-color: #9c69e2;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+@mixin polygon2 {
+  position: absolute;
+  width: 14px;
+  height: 1px;
+  top: 3px;
+  left: 8px;
+  border: 2px solid #9c69e2;
+  background-color: #9c69e2;
+  box-sizing: border-box;
+  border-radius: 2px;
+  transform: rotate(45deg);
+}
+
+@mixin polygon3 {
+  position: absolute;
+  width: 14px;
+  height: 1px;
+  top: 11px;
+  left: 8px;
+  border: 2px solid #9c69e2;
+  background-color: #9c69e2;
+  box-sizing: border-box;
+  border-radius: 2px;
+  transform: rotate(-45deg);
+}
+
+@mixin arrowGroup {
+  .__polygon1 {
+    @include polygon1();
+  }
+  .__polygon2 {
+    @include polygon2();
+  }
+  .__polygon3 {
+    @include polygon3();
+  }
+}
