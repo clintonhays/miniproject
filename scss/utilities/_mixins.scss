@@ -1,4 +1,35 @@
 //
+// Logo
+//
+
+@mixin logo_rectangle1 {
+  height: 20px;
+  width: 20px;
+  background-color: #9c69e2;
+  border-radius: 50%;
+}
+
+@mixin logo_rectangle2 {
+  width: 20px;
+  height: 35px;
+  background-color: #f063b8;
+  border-radius: 20px;
+}
+
+@mixin logoGroup {
+  .logo_rectangle1 {
+    height: 20px;
+    width: 20px;
+    background-color: #9c69e2;
+    border-radius: 50%;
+  }
+
+  .logo_rectangle2 {
+    @include logo_rectangle2();
+  }
+}
+
+//
 // Arrow
 //
 
@@ -49,4 +80,14 @@
   .__polygon3 {
     @include polygon3();
   }
+}
+
+//
+// Section Headers
+//
+
+@mixin helveticaHeader {
+  font-family: Helvetica, sans-serif;
+  font-size: 40px;
+  color: $dark-blue;
 }
