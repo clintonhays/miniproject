@@ -17,6 +17,10 @@
 }
 
 @mixin logoGroup {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5em;
+
   .logo_rectangle1 {
     height: 20px;
     width: 20px;

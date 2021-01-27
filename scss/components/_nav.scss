@@ -1,48 +1,33 @@
 // Navigation
 
-// nav {
-//   position: absolute;
-//   top: 47px;
-//   left: 15%;
-//   display: flex;
-//   align-items: center;
-// }
+nav {
+  position: relative;
+  left: 5%;
+  margin-top: 1.25em;
+  display: flex;
+  align-items: center;
+}
 
 // Logo
 
-// .logo {
-//   display: flex;
-//   align-items: baseline;
-//   gap: 0.5em;
-
-//   .logo_rectangle1 {
-//     height: 20px;
-//     width: 20px;
-//     background-color: #9c69e2;
-//     border-radius: 50%;
-//   }
-
-//   .logo_rectangle2 {
-//     width: 20px;
-//     height: 35px;
-//     background-color: #f063b8;
-//     border-radius: 20px;
-//   }
-// }
+.logo {
+  @include logoGroup;
+}
 
 // Menu
 
-// .menu {
-//   display: flex;
-//   padding-left: 121px;
+.menu {
+  display: flex;
+  padding-left: 10px;
+  gap: 1.25em;
 
-//   .menu__item {
-//     list-style-type: none;
-//     padding-left: 40px;
+  .menu__item {
+    list-style-type: none;
+    padding-left: 10px;
 
-//     .menu__item_link {
-//       color: #212353;
-//       text-decoration: none;
-//     }
-//   }
-// }
+    .menu__item_link {
+      color: #212353;
+      text-decoration: none;
+    }
+  }
+}
