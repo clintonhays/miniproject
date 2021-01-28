@@ -119,3 +119,49 @@
   color: $dark-green;
   line-height: 160%;
 }
+
+//
+// Features
+//
+
+@mixin featuresBase($bgColor) {
+  position: relative;
+  height: 100%;
+  padding: 1em;
+  margin: 2em 0;
+  background: $bgColor;
+  box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+  border-radius: 50px;
+}
+
+@mixin featuresContent($title) {
+  .features__#{$title}_header {
+    position: relative;
+    text-align: center;
+    @include sectionSubheader;
+  }
+
+  .features__#{$title}_text {
+    @include featureCopy;
+    font-weight: 200;
+  }
+
+  .features__#{$title}_link {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-family: $Lato;
+    color: $dark-blue;
+    text-decoration: none;
+
+    &:visited {
+      color: $dark-blue;
+    }
+
+    img {
+      padding: 1.5px;
+      margin-left: 20px;
+    }
+  }
+}
