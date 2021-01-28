@@ -12,6 +12,7 @@ nav {
 
 .logo {
   @include logoGroup;
+  margin-right: 1em;
 }
 
 // Menu
@@ -23,7 +24,6 @@ nav {
 
   .menu__item {
     list-style-type: none;
-    padding-left: 10px;
 
     .menu__item_link {
       color: #212353;
