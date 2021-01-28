@@ -41,3 +41,21 @@
 .bannerButtons {
   @include mobileButtons;
 }
+
+//
+// Testimonial Arrows
+//
+
+.testimonials__arrowNext,
+.testimonials__arrowPrev {
+  background-color: transparent;
+  border: none;
+
+  img {
+    width: 30px;
+  }
+}
+
+.testimonials__arrowPrev {
+  transform: rotate(180deg) translateY(2px);
+}
