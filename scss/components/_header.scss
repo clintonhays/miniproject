@@ -2,38 +2,43 @@
 // Banner
 //
 
-// .topBanner__header {
-//   position: absolute;
-//   width: 645px;
-//   height: 184px;
-//   margin-top: 0;
-//   left: 240px;
-//   top: 237px;
-// }
+.topBanner {
+  margin-top: 3em;
+}
+
+//
+// Banner Header
+//
+
+.topBanner__header {
+  font-family: Helvetica, sans-serif;
+  font-size: 40px;
+  color: $dark-blue;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 18.75px;
+}
 
 //
 // Banner Image
 //
 
-// .bannerImage__img {
-//   position: absolute;
-//   width: 885px;
-//   height: 468px;
-//   left: 603px;
-//   top: 333px;
+.topBanner__img {
+  width: 90%;
+  text-align: center;
 
-//   background: url(/images/image1.svg);
-// }
+  .topBanner__img_img {
+    width: 90%;
+    height: 40%;
+  }
+}
 
 //
 // Banner Copy
 //
 
-// .bannerCopy__text {
-//   position: absolute;
-//   width: 380px;
-//   height: 120px;
-//   margin-top: 0;
-//   left: 240px;
-//   top: 471px;
-// }
+.topBanner__copy_text {
+  width: 90%;
+  margin: 0 auto;
+  @include sectionCopy;
+}
