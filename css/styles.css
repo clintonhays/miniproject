@@ -202,6 +202,7 @@ nav {
 
 .topBanner__img {
   width: 90%;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -650,5 +651,9 @@ nav {
   height: 50px;
   border-radius: 50%;
   background-color: rgba(33, 35, 83, 0.3);
+}
+
+.menu {
+  padding-left: 2.25em;
 }
 /*# sourceMappingURL=styles.css.map */
