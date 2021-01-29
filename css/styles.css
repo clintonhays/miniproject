@@ -131,6 +131,7 @@ a a:visited {
 .testimonials__arrowPrev {
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .testimonials__arrowNext img,
@@ -461,6 +462,7 @@ nav {
   padding-bottom: 1.5em;
   border-radius: 20px;
   background-color: #9c69e2;
+  overflow: hidden;
 }
 
 .testimonials .testimonials__header {
@@ -472,36 +474,43 @@ nav {
   color: white;
 }
 
-.testimonials .testimonial__card {
-  width: 90%;
+.testimonials .testimonial__cards {
+  width: 200%;
+  display: flex;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.testimonials .testimonial__cards .testimonial__card {
+  width: 40%;
   margin: 0 auto;
   border-radius: 20px;
   background-color: #fff;
   box-shadow: 0px 10px 0px rgba(128, 52, 228, 0.3);
 }
 
-.testimonials .testimonial__card .testimonial__card_img {
+.testimonials .testimonial__cards .testimonial__card .testimonial__card_img {
   display: none;
 }
 
-.testimonials .testimonial__card .testimonial__card_user {
+.testimonials .testimonial__cards .testimonial__card .testimonial__card_user {
   padding: 0.5em 1.5em;
   display: flex;
   flex-direction: column;
 }
 
-.testimonials .testimonial__card .testimonial__card_user .testimonial__card_user_name {
+.testimonials .testimonial__cards .testimonial__card .testimonial__card_user .testimonial__card_user_name {
   font-family: "Lato", sans-serif;
   font-weight: bold;
   color: #212353;
 }
 
-.testimonials .testimonial__card .testimonial__card_user .testimonial__card_user_role {
+.testimonials .testimonial__cards .testimonial__card .testimonial__card_user .testimonial__card_user_role {
   font-family: "Lato", sans-serif;
   color: #9c69e2;
 }
 
-.testimonials .testimonial__card .testimonial__card_text {
+.testimonials .testimonial__cards .testimonial__card .testimonial__card_text {
   padding: 0.5em 1.5em;
   font-family: "Lato", sans-serif;
   color: #4b5d68;
