@@ -31,69 +31,6 @@ a a:visited {
 
 .nav .demoButton {
   display: none;
-  position: relative;
-  width: 120px;
-  height: 40px;
-  border: none;
-  background: #fff;
-  box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
-  border-radius: 50px;
-  cursor: pointer;
-}
-
-.nav .demoButton .demoButton__arrow {
-  position: absolute;
-  top: 20px;
-  left: 161px;
-}
-
-.nav .demoButton .demoButton__arrow .__polygon1 {
-  position: absolute;
-  width: 20px;
-  height: 1px;
-  top: 7px;
-  border: 2px solid #9c69e2;
-  background-color: #9c69e2;
-  border-radius: 2px;
-  box-sizing: border-box;
-}
-
-.nav .demoButton .demoButton__arrow .__polygon2 {
-  position: absolute;
-  width: 14px;
-  height: 1px;
-  top: 3px;
-  left: 8px;
-  border: 2px solid #9c69e2;
-  background-color: #9c69e2;
-  box-sizing: border-box;
-  border-radius: 2px;
-  transform: rotate(45deg);
-}
-
-.nav .demoButton .demoButton__arrow .__polygon3 {
-  position: absolute;
-  width: 14px;
-  height: 1px;
-  top: 11px;
-  left: 8px;
-  border: 2px solid #9c69e2;
-  background-color: #9c69e2;
-  box-sizing: border-box;
-  border-radius: 2px;
-  transform: rotate(-45deg);
-}
-
-.nav .demoButton:hover, .nav .demoButton:focus {
-  outline-color: #9c69e2;
-}
-
-.nav .demoButton:hover .demoButton__arrow, .nav .demoButton:focus .demoButton__arrow {
-  animation: strafe 0.8s infinite;
-}
-
-.nav .demoButton:active {
-  transform: scale(0.95);
 }
 
 .bannerButtons {
@@ -116,6 +53,10 @@ a a:visited {
   cursor: pointer;
 }
 
+.bannerButtons .learnMoreButton:focus {
+  outline-color: #9c69e2;
+}
+
 .bannerButtons .demoButton {
   width: 120px;
   height: 40px;
@@ -125,6 +66,10 @@ a a:visited {
   box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
   border-radius: 50px;
   cursor: pointer;
+}
+
+.bannerButtons .demoButton:hover, .bannerButtons .demoButton:focus {
+  outline-color: #f063b8;
 }
 
 .testimonials__arrowNext,
@@ -577,6 +522,10 @@ nav {
   cursor: pointer;
 }
 
+.footer__buttons .learnMoreButton:focus {
+  outline-color: #9c69e2;
+}
+
 .footer__buttons .demoButton {
   width: 120px;
   height: 40px;
@@ -586,6 +535,10 @@ nav {
   box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
   border-radius: 50px;
   cursor: pointer;
+}
+
+.footer__buttons .demoButton:hover, .footer__buttons .demoButton:focus {
+  outline-color: #f063b8;
 }
 
 .footer__branding {
@@ -653,7 +606,80 @@ nav {
   background-color: rgba(33, 35, 83, 0.3);
 }
 
-.menu {
-  padding-left: 2.25em;
+@media (min-width: 480px) {
+  .menu {
+    padding-left: 2.25em;
+  }
+}
+
+.nav .demoButton {
+  display: initial;
+  position: relative;
+  width: 120px;
+  height: 40px;
+  border: none;
+  background: #fff;
+  box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+  border-radius: 50px;
+  cursor: pointer;
+  margin-left: 15em;
+}
+
+.nav .demoButton .demoButton__arrow {
+  display: none;
+}
+
+.nav .demoButton:focus {
+  outline-color: #9c69e2;
+}
+
+.nav .demoButton:focus .demoButton__arrow {
+  animation: strafe 0.8s infinite;
+}
+
+.nav .demoButton:active {
+  transform: scale(0.95);
+}
+
+.topBanner .topBanner__copy {
+  position: absolute;
+  width: 60%;
+  left: 4em;
+}
+
+.topBanner .bannerButtons {
+  justify-content: end;
+  margin-right: 4em;
+}
+
+.topBanner .bannerButtons .demoButton {
+  display: none;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "Img Header" "Img Copy";
+  align-items: end;
+  gap: 25px;
+  height: 320px;
+}
+
+.about .about__header {
+  grid-area: Header;
+}
+
+.about .about__text {
+  grid-area: Copy;
+}
+
+.about .about__img {
+  grid-area: Img;
+}
+
+.about .about__img .about__img_img {
+  display: initial;
+  width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */

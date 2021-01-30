@@ -2,6 +2,8 @@
 // 480px Screen
 //
 
-.menu {
-  padding-left: 2.25em;
+@media (min-width: $sm) {
+  .menu {
+    padding-left: 2.25em;
+  }
 }

@@ -54,6 +54,10 @@
     color: white;
     box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
     cursor: pointer;
+
+    &:focus {
+      outline-color: $purple;
+    }
   }
   .demoButton {
     width: 120px;
@@ -64,6 +68,11 @@
     box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
     border-radius: 50px;
     cursor: pointer;
+
+    &:hover,
+    &:focus {
+      outline-color: $pink;
+    }
   }
 }
 
