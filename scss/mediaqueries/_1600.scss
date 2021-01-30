@@ -1,0 +1,23 @@
+//
+// 1600px Screen
+//
+
+@media (min-width: 1600px) {
+  // Nav
+
+  .nav {
+    margin-left: 240px;
+  }
+
+  // Top Banner
+
+  .topBanner {
+    margin-left: 240px;
+
+    .topBanner__img {
+      width: 885px;
+      margin-right: 56px;
+      margin-top: 115px;
+    }
+  }
+}

@@ -1130,4 +1130,18 @@ nav {
     margin-left: 950px;
   }
 }
+
+@media (min-width: 1600px) {
+  .nav {
+    margin-left: 240px;
+  }
+  .topBanner {
+    margin-left: 240px;
+  }
+  .topBanner .topBanner__img {
+    width: 885px;
+    margin-right: 56px;
+    margin-top: 115px;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
