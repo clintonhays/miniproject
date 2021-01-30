@@ -653,9 +653,9 @@ nav {
   .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto;
     grid-template-areas: "Img Copy" "Img Copy";
-    align-items: end;
+    align-items: center;
     gap: 25px;
     height: 320px;
   }
@@ -739,6 +739,7 @@ nav {
     width: 100%;
   }
   .about {
+    height: 400px;
     gap: 25px 0;
   }
   .about .about__img {
@@ -979,6 +980,53 @@ nav {
   }
   .footer .footer__brand__about__help__social .footer__social .footer__social_linksWrapper {
     gap: 14px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .topBanner .topBanner__header {
+    font-size: 50px;
+    margin-bottom: 0;
+  }
+  .topBanner .topBanner__copy {
+    margin-top: 25px;
+  }
+  .topBanner .topBanner__img {
+    width: 600px;
+    margin-top: 80px;
+    margin-right: 50px;
+  }
+  .topBanner .bannerButtons {
+    margin-top: 25px;
+  }
+  .features .features__title .features__title_text {
+    margin: 1em auto;
+    width: 60%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    align-items: start;
+    grid-template-areas: "Title Title" "Search Access" "Print Security";
+  }
+  .features .features__title {
+    grid-area: Title;
+  }
+  .features .features__search {
+    grid-area: Search;
+  }
+  .features .features__access {
+    grid-area: Access;
+  }
+  .features .features__print {
+    grid-area: Print;
+  }
+  .features .features__security {
+    grid-area: Security;
   }
 }
 /*# sourceMappingURL=styles.css.map */

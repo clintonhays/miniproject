@@ -1,0 +1,36 @@
+//
+// 1400px Screen
+//
+
+@media (min-width: 1400px) {
+  .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    align-items: start;
+    grid-template-areas:
+      "Title Title"
+      "Search Access"
+      "Print Security";
+
+    .features__title {
+      grid-area: Title;
+    }
+
+    .features__search {
+      grid-area: Search;
+    }
+
+    .features__access {
+      grid-area: Access;
+    }
+
+    .features__print {
+      grid-area: Print;
+    }
+
+    .features__security {
+      grid-area: Security;
+    }
+  }
+}

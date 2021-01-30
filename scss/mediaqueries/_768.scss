@@ -55,11 +55,11 @@
   .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto;
     grid-template-areas:
       "Img Copy"
       "Img Copy";
-    align-items: end;
+    align-items: center;
     gap: 25px;
     height: 320px;
 

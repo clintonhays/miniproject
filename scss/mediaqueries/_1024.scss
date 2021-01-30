@@ -92,10 +92,13 @@
   // Info
 
   .about {
+    height: 400px;
     gap: 25px 0;
+
     .about__img {
       width: 80%;
       margin-left: 3em;
+
       .about__img_img {
         width: 100%;
       }

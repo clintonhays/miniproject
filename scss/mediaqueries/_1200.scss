@@ -1,0 +1,39 @@
+//
+// 1200px Screen
+//
+
+@media (min-width: 1200px) {
+  // Top Banner
+
+  .topBanner {
+    .topBanner__header {
+      font-size: 50px;
+      margin-bottom: 0;
+    }
+
+    .topBanner__copy {
+      margin-top: 25px;
+    }
+
+    .topBanner__img {
+      width: 600px;
+      margin-top: 80px;
+      margin-right: 50px;
+    }
+
+    .bannerButtons {
+      margin-top: 25px;
+    }
+  }
+
+  // Features
+
+  .features {
+    .features__title {
+      .features__title_text {
+        margin: 1em auto;
+        width: 60%;
+      }
+    }
+  }
+}
