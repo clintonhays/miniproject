@@ -388,6 +388,7 @@ nav {
 }
 
 .testimonials {
+  position: relative;
   width: 90%;
   margin: 0 auto;
   margin-bottom: 3em;
@@ -396,6 +397,17 @@ nav {
   border-radius: 20px;
   background-color: #9c69e2;
   overflow: hidden;
+  z-index: 0;
+}
+
+.testimonials .testimonials__gradient {
+  position: absolute;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 80%, #9c69e2 100%);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: 2;
 }
 
 .testimonials .testimonials__header {
@@ -408,6 +420,7 @@ nav {
 }
 
 .testimonials .testimonial__cards {
+  z-index: 1;
   width: 200%;
   display: flex;
   justify-content: center;
@@ -467,29 +480,33 @@ nav {
 
 .testimonials .testimonials__counter .testimonials__counter_arrows {
   margin-top: 1.5em;
+  z-index: 3;
 }
 
-.footer__title {
+.footer {
   border-top: 2px solid rgba(156, 105, 226, 0.2);
+}
+
+.footer .footer__title {
   padding-top: 2em;
   text-align: center;
 }
 
-.footer__title .footer__title_header {
+.footer .footer__title .footer__title_header {
   margin-top: 0;
   font-family: Helvetica, sans-serif;
   font-size: 30px;
   color: #212353;
 }
 
-.footer__title .footer__title_text {
+.footer .footer__title .footer__title_text {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   color: #4b5d68;
   line-height: 160%;
 }
 
-.footer__buttons {
+.footer .footer__buttons {
   display: flex;
   justify-content: space-around;
   margin-top: 1.5em;
@@ -497,7 +514,7 @@ nav {
   margin-right: 18.75px;
 }
 
-.footer__buttons .learnMoreButton {
+.footer .footer__buttons .learnMoreButton {
   width: 120px;
   height: 40px;
   border: none;
@@ -509,11 +526,11 @@ nav {
   cursor: pointer;
 }
 
-.footer__buttons .learnMoreButton:focus {
+.footer .footer__buttons .learnMoreButton:focus {
   outline-color: #9c69e2;
 }
 
-.footer__buttons .demoButton {
+.footer .footer__buttons .demoButton {
   width: 120px;
   height: 40px;
   border: none;
@@ -524,11 +541,11 @@ nav {
   cursor: pointer;
 }
 
-.footer__buttons .demoButton:hover, .footer__buttons .demoButton:focus {
+.footer .footer__buttons .demoButton:hover, .footer .footer__buttons .demoButton:focus {
   outline-color: #f063b8;
 }
 
-.footer__branding {
+.footer .footer__branding {
   margin: 0 auto;
   margin-top: 3em;
   margin-left: 18.75px;
@@ -536,7 +553,7 @@ nav {
   gap: 1em;
 }
 
-.footer__branding .footer__branding_name {
+.footer .footer__branding .footer__branding_name {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   color: #212353;
@@ -544,7 +561,7 @@ nav {
   font-weight: bold;
 }
 
-.footer__contact_info {
+.footer .footer__contact_info {
   width: 62%;
   margin-left: 18.75px;
   font-family: "Lato", sans-serif;
@@ -553,11 +570,11 @@ nav {
   line-height: 160%;
 }
 
-.footer__contact_info .footer__contact_info_text1 {
+.footer .footer__contact_info .footer__contact_info_text1 {
   margin-top: 0;
 }
 
-.footer__about__help {
+.footer .footer__about__help {
   display: flex;
   justify-content: space-around;
   font-family: "Lato", sans-serif;
@@ -566,12 +583,12 @@ nav {
   line-height: 160%;
 }
 
-.footer__about__help .footer__about_header,
-.footer__about__help .footer__help_header {
+.footer .footer__about__help .footer__about_header,
+.footer .footer__about__help .footer__help_header {
   font-weight: bold;
 }
 
-.footer__social .footer__social_header {
+.footer .footer__social .footer__social_header {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   color: #212353;
@@ -580,13 +597,13 @@ nav {
   text-align: center;
 }
 
-.footer__social .footer__social_linksWrapper {
+.footer .footer__social .footer__social_linksWrapper {
   margin-bottom: 3em;
   display: flex;
   justify-content: space-around;
 }
 
-.footer__social .footer__social_linksWrapper .footer__social_link {
+.footer .footer__social .footer__social_linksWrapper .footer__social_link {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -734,14 +751,13 @@ nav {
   .about .about__copy {
     margin-right: 5em;
   }
-  .features {
-    width: 45%;
-  }
   .features img {
     display: initial;
   }
   .features .features__search {
+    width: 442px;
     height: 358px;
+    margin: 4em auto;
     background-color: transparent;
     box-shadow: none;
     background: url(../../images/searchBG.svg);
@@ -774,7 +790,9 @@ nav {
     line-height: 160%;
   }
   .features .features__access {
+    width: 442px;
     height: 358px;
+    margin: 4em auto;
     background-color: transparent;
     box-shadow: none;
     background: url(../../images/accessBG.svg);
@@ -807,7 +825,9 @@ nav {
     line-height: 160%;
   }
   .features .features__print {
+    width: 442px;
     height: 358px;
+    margin: 4em auto;
     background-color: transparent;
     box-shadow: none;
     background: url(../../images/printBG.svg);
@@ -840,7 +860,9 @@ nav {
     line-height: 160%;
   }
   .features .features__security {
+    width: 442px;
     height: 358px;
+    margin: 4em auto;
     background-color: transparent;
     box-shadow: none;
     background: url(../../images/securityBG.svg);
@@ -903,6 +925,60 @@ nav {
   .testimonials .testimonial__cards .testimonial__card .testimonial__card_user .testimonial__card_user_info {
     display: flex;
     flex-direction: column;
+  }
+  .footer .footer__title__buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footer .footer__title__buttons .footer__title_header {
+    text-align: initial;
+    margin-bottom: 0;
+  }
+  .footer .footer__title__buttons .footer__title_text {
+    margin-top: 20px;
+  }
+  .footer .footer__title__buttons .footer__buttons {
+    gap: 30px;
+  }
+  .footer .footer__title__buttons .footer__buttons .learnMoreButton {
+    width: 170px;
+    height: 60px;
+    background-color: #f063b8;
+  }
+  .footer .footer__title__buttons .footer__buttons .demoButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 210px;
+    height: 60px;
+    background: #fff;
+    color: #212353;
+  }
+  .footer .footer__title__buttons .footer__buttons .demoButton .demoButton__arrow {
+    width: 20px;
+    height: 14px;
+    display: initial;
+  }
+  .footer .footer__brand__about__help__social {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 150px;
+    margin-bottom: 89px;
+  }
+  .footer .footer__brand__about__help__social .footer__branding {
+    margin-top: 0;
+  }
+  .footer .footer__brand__about__help__social .footer__contact_info {
+    width: 100%;
+  }
+  .footer .footer__brand__about__help__social .footer__about {
+    margin-right: 150px;
+  }
+  .footer .footer__brand__about__help__social .footer__social .footer__social_linksWrapper {
+    gap: 14px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

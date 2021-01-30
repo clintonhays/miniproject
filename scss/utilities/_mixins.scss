@@ -130,7 +130,9 @@
 
 @mixin features1024($bgImg, $title) {
   .features__#{$title} {
+    width: 442px;
     height: 358px;
+    margin: 4em auto;
     background-color: transparent;
     box-shadow: none;
     background: url(../../images/#{$bgImg}.svg);
