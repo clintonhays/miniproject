@@ -2,79 +2,77 @@
 // 768px Screen
 //
 
-// Nav
+@media (min-width: 768px) {
+  // Nav
 
-.nav {
-  .demoButton {
-    display: initial;
-    position: relative;
-    width: 120px;
-    height: 40px;
-    border: none;
-    background: #fff;
-    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
-    border-radius: 50px;
-    cursor: pointer;
-    margin-left: 15em;
-
-    .demoButton__arrow {
-      display: none;
-    }
-
-    &:focus {
-      outline-color: #9c69e2;
-    }
-
-    &:active {
-      transform: scale(0.95);
-    }
-  }
-}
-
-// Top Banner
-
-.topBanner {
-  .topBanner__copy {
-    position: absolute;
-    width: 60%;
-    left: 4em;
-  }
-
-  .bannerButtons {
-    justify-content: end;
-    margin-right: 4em;
+  .nav {
     .demoButton {
-      display: none;
+      display: initial;
+      position: relative;
+      width: 120px;
+      height: 40px;
+      border: none;
+      background: #fff;
+      box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+      border-radius: 50px;
+      cursor: pointer;
+      margin-left: 15em;
+
+      .demoButton__arrow {
+        display: none;
+      }
+
+      &:focus {
+        outline-color: #9c69e2;
+      }
+
+      &:active {
+        transform: scale(0.95);
+      }
     }
   }
-}
 
-// Info
+  // Top Banner
 
-.about {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas:
-    "Img Header"
-    "Img Copy";
-  align-items: end;
-  gap: 25px;
-  height: 320px;
+  .topBanner {
+    .topBanner__copy {
+      position: absolute;
+      width: 60%;
+      left: 4em;
+    }
 
-  .about__header {
-    grid-area: Header;
+    .bannerButtons {
+      justify-content: end;
+      margin-right: 4em;
+      .demoButton {
+        display: none;
+      }
+    }
   }
 
-  .about__text {
-    grid-area: Copy;
-  }
-  .about__img {
-    grid-area: Img;
+  // Info
 
-    .about__img_img {
-      display: initial;
-      width: 100%;
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "Img Copy"
+      "Img Copy";
+    align-items: end;
+    gap: 25px;
+    height: 320px;
+
+    .about__copy {
+      grid-area: Copy;
+    }
+    .about__img {
+      grid-area: Img;
+
+      .about__img_img {
+        display: initial;
+        width: 100%;
+      }
     }
   }
 }

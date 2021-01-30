@@ -127,3 +127,44 @@
     }
   }
 }
+
+@mixin features1024($bgImg, $title) {
+  .features__#{$title} {
+    height: 358px;
+    background-color: transparent;
+    box-shadow: none;
+    background: url(../../images/#{$bgImg}.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .features__#{$title}_img {
+      transform: translate(-25%, 35%);
+    }
+
+    .features__#{$title}_copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 50%;
+      height: 100%;
+      margin-right: 50px;
+      transform: translate(95%, -60%);
+
+      .features__#{$title}_header {
+        font-size: 24px;
+        text-align: left;
+        margin-bottom: 40px;
+      }
+
+      .features__#{$title}_text {
+        font-size: 16px;
+        margin-bottom: 40px;
+      }
+
+      .features__#{$title}_link {
+        font-size: 16px;
+        line-height: 160%;
+      }
+    }
+  }
+}

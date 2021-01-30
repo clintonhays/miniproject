@@ -1,52 +1,142 @@
-// Nav
+//
+// 1024px Screen
+//
 
-.nav {
-  padding-left: 0;
-  margin-left: 12%;
+@media (min-width: 1024px) {
+  // Nav
 
-  .menu__item {
-    color: $dark-green;
+  .nav {
+    padding-left: 0;
+    margin-left: 12%;
 
-    &:hover {
-      /* 
+    .menu__item {
+      color: $dark-green;
+
+      &:hover {
+        /* 
          bold on hover causing layout shift on firefox.
          no layout shift on chrome, edge, or opera. searching
          for firefox fix in the meantime.
       */
-      font-weight: bold;
-    }
-  }
-
-  .demoButton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    width: 210px;
-    height: 60px;
-
-    .demoButton__arrow {
-      width: 20px;
-      height: 14px;
-      display: initial;
+        font-weight: bold;
+      }
     }
 
-    &:hover {
+    .demoButton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      width: 210px;
+      height: 60px;
+
       .demoButton__arrow {
-        /* 
+        width: 20px;
+        height: 14px;
+        display: initial;
+      }
+
+      &:hover {
+        .demoButton__arrow {
+          /* 
            animation causing slight shift down in arrow
            arrow seems to be scaling up slightly
            but there are no size difference when checking
            dev tools. problem is found on all browsers.
            removing animation until solution is found.
         */
-        // animation: strafe 0.8s infinite;
+          // animation: strafe 0.8s infinite;
+        }
       }
     }
   }
-}
 
-// Top Banner
+  // Top Banner
 
-.topBanner {
+  .topBanner {
+    width: 76%;
+    margin: 0 auto;
+    margin-top: 5em;
+
+    .topBanner__header {
+      width: 55%;
+      margin-left: 0;
+    }
+
+    .topBanner__copy {
+      width: 55%;
+      position: initial;
+
+      .topBanner__copy_text {
+        margin: 0;
+      }
+    }
+
+    .bannerButtons {
+      display: block;
+      margin-left: 0;
+    }
+
+    .topBanner__img {
+      display: block;
+      width: 50%;
+      float: right;
+      transform: translatey(-50%);
+
+      .topBanner__img_img {
+        width: 100%;
+      }
+    }
+  }
+
+  // Info
+
+  .about {
+    gap: 25px 0;
+    .about__img {
+      width: 80%;
+      margin-left: 3em;
+      .about__img_img {
+        width: 100%;
+      }
+    }
+
+    .about__copy {
+      margin-right: 5em;
+    }
+  }
+
+  // Features
+
+  .features {
+    width: 45%;
+
+    img {
+      display: initial;
+    }
+
+    @include features1024(searchBG, search);
+    @include features1024(accessBG, access);
+    @include features1024(printBG, print);
+    @include features1024(securityBG, security);
+
+    .features__access {
+      .features__access_copy {
+        padding-top: 2.25em;
+      }
+    }
+
+    .features__print {
+      .features__print_copy {
+        padding-top: 2.25em;
+      }
+    }
+
+    .features__security {
+      margin-bottom: 150px;
+      .features__security_copy {
+        padding-top: 0.6em;
+      }
+    }
+  }
 }

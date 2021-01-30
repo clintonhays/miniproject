@@ -185,6 +185,10 @@ nav {
   margin-top: 5em;
 }
 
+.features img {
+  display: none;
+}
+
 .features .features__title {
   text-align: center;
 }
@@ -202,7 +206,7 @@ nav {
   line-height: 160%;
 }
 
-.features__search {
+.features .features__search {
   position: relative;
   height: 100%;
   padding: 1em;
@@ -212,7 +216,7 @@ nav {
   border-radius: 50px;
 }
 
-.features__search .features__search_header {
+.features .features__search .features__search_header {
   position: relative;
   text-align: center;
   font-family: Helvetica, sans-serif;
@@ -220,7 +224,7 @@ nav {
   color: #212353;
 }
 
-.features__search .features__search_text {
+.features .features__search .features__search_text {
   font-family: "Lato", sans-serif;
   font-size: 15px;
   color: #4b5d68;
@@ -228,7 +232,7 @@ nav {
   font-weight: 200;
 }
 
-.features__search .features__search_link {
+.features .features__search .features__search_link {
   display: flex;
   align-items: center;
   margin-top: 0;
@@ -238,16 +242,16 @@ nav {
   text-decoration: none;
 }
 
-.features__search .features__search_link:visited {
+.features .features__search .features__search_link:visited {
   color: #212353;
 }
 
-.features__search .features__search_link img {
+.features .features__search .features__search_link img {
   padding: 1.5px;
   margin-left: 20px;
 }
 
-.features__access {
+.features .features__access {
   position: relative;
   height: 100%;
   padding: 1em;
@@ -257,7 +261,7 @@ nav {
   border-radius: 50px;
 }
 
-.features__access .features__access_header {
+.features .features__access .features__access_header {
   position: relative;
   text-align: center;
   font-family: Helvetica, sans-serif;
@@ -265,7 +269,7 @@ nav {
   color: #212353;
 }
 
-.features__access .features__access_text {
+.features .features__access .features__access_text {
   font-family: "Lato", sans-serif;
   font-size: 15px;
   color: #4b5d68;
@@ -273,7 +277,7 @@ nav {
   font-weight: 200;
 }
 
-.features__access .features__access_link {
+.features .features__access .features__access_link {
   display: flex;
   align-items: center;
   margin-top: 0;
@@ -283,16 +287,16 @@ nav {
   text-decoration: none;
 }
 
-.features__access .features__access_link:visited {
+.features .features__access .features__access_link:visited {
   color: #212353;
 }
 
-.features__access .features__access_link img {
+.features .features__access .features__access_link img {
   padding: 1.5px;
   margin-left: 20px;
 }
 
-.features__print {
+.features .features__print {
   position: relative;
   height: 100%;
   padding: 1em;
@@ -302,7 +306,7 @@ nav {
   border-radius: 50px;
 }
 
-.features__print .features__print_header {
+.features .features__print .features__print_header {
   position: relative;
   text-align: center;
   font-family: Helvetica, sans-serif;
@@ -310,7 +314,7 @@ nav {
   color: #212353;
 }
 
-.features__print .features__print_text {
+.features .features__print .features__print_text {
   font-family: "Lato", sans-serif;
   font-size: 15px;
   color: #4b5d68;
@@ -318,7 +322,7 @@ nav {
   font-weight: 200;
 }
 
-.features__print .features__print_link {
+.features .features__print .features__print_link {
   display: flex;
   align-items: center;
   margin-top: 0;
@@ -328,16 +332,16 @@ nav {
   text-decoration: none;
 }
 
-.features__print .features__print_link:visited {
+.features .features__print .features__print_link:visited {
   color: #212353;
 }
 
-.features__print .features__print_link img {
+.features .features__print .features__print_link img {
   padding: 1.5px;
   margin-left: 20px;
 }
 
-.features__security {
+.features .features__security {
   position: relative;
   height: 100%;
   padding: 1em;
@@ -348,7 +352,7 @@ nav {
   margin-bottom: 3em;
 }
 
-.features__security .features__security_header {
+.features .features__security .features__security_header {
   position: relative;
   text-align: center;
   font-family: Helvetica, sans-serif;
@@ -356,7 +360,7 @@ nav {
   color: #212353;
 }
 
-.features__security .features__security_text {
+.features .features__security .features__security_text {
   font-family: "Lato", sans-serif;
   font-size: 15px;
   color: #4b5d68;
@@ -364,7 +368,7 @@ nav {
   font-weight: 200;
 }
 
-.features__security .features__security_link {
+.features .features__security .features__security_link {
   display: flex;
   align-items: center;
   margin-top: 0;
@@ -374,11 +378,11 @@ nav {
   text-decoration: none;
 }
 
-.features__security .features__security_link:visited {
+.features .features__security .features__security_link:visited {
   color: #212353;
 }
 
-.features__security .features__security_link img {
+.features .features__security .features__security_link img {
   padding: 1.5px;
   margin-left: 20px;
 }
@@ -595,113 +599,290 @@ nav {
   }
 }
 
-.nav .demoButton {
-  display: initial;
-  position: relative;
-  width: 120px;
-  height: 40px;
-  border: none;
-  background: #fff;
-  box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
-  border-radius: 50px;
-  cursor: pointer;
-  margin-left: 15em;
+@media (min-width: 768px) {
+  .nav .demoButton {
+    display: initial;
+    position: relative;
+    width: 120px;
+    height: 40px;
+    border: none;
+    background: #fff;
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    border-radius: 50px;
+    cursor: pointer;
+    margin-left: 15em;
+  }
+  .nav .demoButton .demoButton__arrow {
+    display: none;
+  }
+  .nav .demoButton:focus {
+    outline-color: #9c69e2;
+  }
+  .nav .demoButton:active {
+    transform: scale(0.95);
+  }
+  .topBanner .topBanner__copy {
+    position: absolute;
+    width: 60%;
+    left: 4em;
+  }
+  .topBanner .bannerButtons {
+    justify-content: end;
+    margin-right: 4em;
+  }
+  .topBanner .bannerButtons .demoButton {
+    display: none;
+  }
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "Img Copy" "Img Copy";
+    align-items: end;
+    gap: 25px;
+    height: 320px;
+  }
+  .about .about__copy {
+    grid-area: Copy;
+  }
+  .about .about__img {
+    grid-area: Img;
+  }
+  .about .about__img .about__img_img {
+    display: initial;
+    width: 100%;
+  }
 }
 
-.nav .demoButton .demoButton__arrow {
-  display: none;
-}
-
-.nav .demoButton:focus {
-  outline-color: #9c69e2;
-}
-
-.nav .demoButton:active {
-  transform: scale(0.95);
-}
-
-.topBanner .topBanner__copy {
-  position: absolute;
-  width: 60%;
-  left: 4em;
-}
-
-.topBanner .bannerButtons {
-  justify-content: end;
-  margin-right: 4em;
-}
-
-.topBanner .bannerButtons .demoButton {
-  display: none;
-}
-
-.about {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "Img Header" "Img Copy";
-  align-items: end;
-  gap: 25px;
-  height: 320px;
-}
-
-.about .about__header {
-  grid-area: Header;
-}
-
-.about .about__text {
-  grid-area: Copy;
-}
-
-.about .about__img {
-  grid-area: Img;
-}
-
-.about .about__img .about__img_img {
-  display: initial;
-  width: 100%;
-}
-
-.nav {
-  padding-left: 0;
-  margin-left: 12%;
-}
-
-.nav .menu__item {
-  color: #4b5d68;
-}
-
-.nav .menu__item:hover {
-  /* 
+@media (min-width: 1024px) {
+  .nav {
+    padding-left: 0;
+    margin-left: 12%;
+  }
+  .nav .menu__item {
+    color: #4b5d68;
+  }
+  .nav .menu__item:hover {
+    /* 
          bold on hover causing layout shift on firefox.
          no layout shift on chrome, edge, or opera. searching
          for firefox fix in the meantime.
       */
-  font-weight: bold;
-}
-
-.nav .demoButton {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  width: 210px;
-  height: 60px;
-}
-
-.nav .demoButton .demoButton__arrow {
-  width: 20px;
-  height: 14px;
-  display: initial;
-}
-
-.nav .demoButton:hover .demoButton__arrow {
-  /* 
+    font-weight: bold;
+  }
+  .nav .demoButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 210px;
+    height: 60px;
+  }
+  .nav .demoButton .demoButton__arrow {
+    width: 20px;
+    height: 14px;
+    display: initial;
+  }
+  .nav .demoButton:hover .demoButton__arrow {
+    /* 
            animation causing slight shift down in arrow
            arrow seems to be scaling up slightly
            but there are no size difference when checking
            dev tools. problem is found on all browsers.
            removing animation until solution is found.
         */
+  }
+  .topBanner {
+    width: 76%;
+    margin: 0 auto;
+    margin-top: 5em;
+  }
+  .topBanner .topBanner__header {
+    width: 55%;
+    margin-left: 0;
+  }
+  .topBanner .topBanner__copy {
+    width: 55%;
+    position: initial;
+  }
+  .topBanner .topBanner__copy .topBanner__copy_text {
+    margin: 0;
+  }
+  .topBanner .bannerButtons {
+    display: block;
+    margin-left: 0;
+  }
+  .topBanner .topBanner__img {
+    display: block;
+    width: 50%;
+    float: right;
+    transform: translatey(-50%);
+  }
+  .topBanner .topBanner__img .topBanner__img_img {
+    width: 100%;
+  }
+  .about {
+    gap: 25px 0;
+  }
+  .about .about__img {
+    width: 80%;
+    margin-left: 3em;
+  }
+  .about .about__img .about__img_img {
+    width: 100%;
+  }
+  .about .about__copy {
+    margin-right: 5em;
+  }
+  .features {
+    width: 45%;
+  }
+  .features img {
+    display: initial;
+  }
+  .features .features__search {
+    height: 358px;
+    background-color: transparent;
+    box-shadow: none;
+    background: url(../../images/searchBG.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .features .features__search .features__search_img {
+    transform: translate(-25%, 35%);
+  }
+  .features .features__search .features__search_copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    height: 100%;
+    margin-right: 50px;
+    transform: translate(95%, -60%);
+  }
+  .features .features__search .features__search_copy .features__search_header {
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  .features .features__search .features__search_copy .features__search_text {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  .features .features__search .features__search_copy .features__search_link {
+    font-size: 16px;
+    line-height: 160%;
+  }
+  .features .features__access {
+    height: 358px;
+    background-color: transparent;
+    box-shadow: none;
+    background: url(../../images/accessBG.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .features .features__access .features__access_img {
+    transform: translate(-25%, 35%);
+  }
+  .features .features__access .features__access_copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    height: 100%;
+    margin-right: 50px;
+    transform: translate(95%, -60%);
+  }
+  .features .features__access .features__access_copy .features__access_header {
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  .features .features__access .features__access_copy .features__access_text {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  .features .features__access .features__access_copy .features__access_link {
+    font-size: 16px;
+    line-height: 160%;
+  }
+  .features .features__print {
+    height: 358px;
+    background-color: transparent;
+    box-shadow: none;
+    background: url(../../images/printBG.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .features .features__print .features__print_img {
+    transform: translate(-25%, 35%);
+  }
+  .features .features__print .features__print_copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    height: 100%;
+    margin-right: 50px;
+    transform: translate(95%, -60%);
+  }
+  .features .features__print .features__print_copy .features__print_header {
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  .features .features__print .features__print_copy .features__print_text {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  .features .features__print .features__print_copy .features__print_link {
+    font-size: 16px;
+    line-height: 160%;
+  }
+  .features .features__security {
+    height: 358px;
+    background-color: transparent;
+    box-shadow: none;
+    background: url(../../images/securityBG.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .features .features__security .features__security_img {
+    transform: translate(-25%, 35%);
+  }
+  .features .features__security .features__security_copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    height: 100%;
+    margin-right: 50px;
+    transform: translate(95%, -60%);
+  }
+  .features .features__security .features__security_copy .features__security_header {
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  .features .features__security .features__security_copy .features__security_text {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  .features .features__security .features__security_copy .features__security_link {
+    font-size: 16px;
+    line-height: 160%;
+  }
+  .features .features__access .features__access_copy {
+    padding-top: 2.25em;
+  }
+  .features .features__print .features__print_copy {
+    padding-top: 2.25em;
+  }
+  .features .features__security {
+    margin-bottom: 150px;
+  }
+  .features .features__security .features__security_copy {
+    padding-top: 0.6em;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
