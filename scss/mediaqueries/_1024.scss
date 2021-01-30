@@ -1,0 +1,52 @@
+// Nav
+
+.nav {
+  padding-left: 0;
+  margin-left: 12%;
+
+  .menu__item {
+    color: $dark-green;
+
+    &:hover {
+      /* 
+         bold on hover causing layout shift on firefox.
+         no layout shift on chrome, edge, or opera. searching
+         for firefox fix in the meantime.
+      */
+      font-weight: bold;
+    }
+  }
+
+  .demoButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 210px;
+    height: 60px;
+
+    .demoButton__arrow {
+      width: 20px;
+      height: 14px;
+      display: initial;
+    }
+
+    &:hover {
+      .demoButton__arrow {
+        /* 
+           animation causing slight shift down in arrow
+           arrow seems to be scaling up slightly
+           but there are no size difference when checking
+           dev tools. problem is found on all browsers.
+           removing animation until solution is found.
+        */
+        // animation: strafe 0.8s infinite;
+      }
+    }
+  }
+}
+
+// Top Banner
+
+.topBanner {
+}

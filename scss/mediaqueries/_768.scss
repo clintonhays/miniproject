@@ -23,10 +23,6 @@
 
     &:focus {
       outline-color: #9c69e2;
-
-      .demoButton__arrow {
-        animation: strafe 0.8s infinite;
-      }
     }
 
     &:active {
