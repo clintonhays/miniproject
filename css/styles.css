@@ -884,5 +884,25 @@ nav {
   .features .features__security .features__security_copy {
     padding-top: 0.6em;
   }
+  .testimonials {
+    width: 60%;
+    margin-bottom: 150px;
+  }
+  .testimonials .testimonial__cards .testimonial__card {
+    width: 30%;
+  }
+  .testimonials .testimonial__cards .testimonial__card .testimonial__card_img {
+    display: block;
+  }
+  .testimonials .testimonial__cards .testimonial__card .testimonial__card_user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5em;
+  }
+  .testimonials .testimonial__cards .testimonial__card .testimonial__card_user .testimonial__card_user_info {
+    display: flex;
+    flex-direction: column;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

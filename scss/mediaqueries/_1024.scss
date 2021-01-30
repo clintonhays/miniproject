@@ -139,4 +139,32 @@
       }
     }
   }
+
+  // Testimonials
+
+  .testimonials {
+    width: 60%;
+    margin-bottom: 150px;
+    .testimonial__cards {
+      .testimonial__card {
+        width: 30%;
+
+        .testimonial__card_img {
+          display: block;
+        }
+
+        .testimonial__card_user {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 1.5em;
+
+          .testimonial__card_user_info {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
 }
