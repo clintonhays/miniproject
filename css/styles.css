@@ -423,6 +423,7 @@ nav {
   z-index: 1;
   width: 200%;
   display: flex;
+  gap: 1em;
   justify-content: center;
   transition: all 0.5s ease-in-out;
 }
@@ -439,7 +440,7 @@ nav {
   display: none;
 }
 
-.testimonials .testimonial__cards .testimonial__card .testimonial__card_user {
+.testimonials .testimonial__cards .testimonial__card .testimonial__card_user .testimonial__card_user_info {
   padding: 0.5em 1.5em;
   display: flex;
   flex-direction: column;
@@ -465,7 +466,6 @@ nav {
 
 .testimonials .testimonials__counter {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0 1em;
 }
@@ -473,14 +473,22 @@ nav {
 .testimonials .testimonials__counter .testimonials__counter_pip {
   width: 5px;
   height: 5px;
+  margin-left: 10px;
   background-color: white;
   border-radius: 50%;
   margin-top: 1.5em;
 }
 
+.testimonials .testimonials__counter .active {
+  width: 10px;
+  height: 10px;
+  background-color: #f063b8;
+}
+
 .testimonials .testimonials__counter .testimonials__counter_arrows {
   margin-top: 1.5em;
   z-index: 3;
+  margin-left: 55%;
 }
 
 .footer {
@@ -543,6 +551,10 @@ nav {
 
 .footer .footer__buttons .demoButton:hover, .footer .footer__buttons .demoButton:focus {
   outline-color: #f063b8;
+}
+
+.footer .footer__buttons .demoButton img {
+  display: none;
 }
 
 .footer .footer__branding {
@@ -614,6 +626,9 @@ nav {
   .menu {
     padding-left: 2.25em;
   }
+  .testimonials .testimonials__counter .testimonials__counter_arrows {
+    margin-left: 65%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -668,6 +683,9 @@ nav {
   .about .about__img .about__img_img {
     display: initial;
     width: 100%;
+  }
+  .testimonials .testimonials__counter .testimonials__counter_arrows {
+    margin-left: 80%;
   }
 }
 
@@ -916,16 +934,21 @@ nav {
   }
   .testimonials .testimonial__cards .testimonial__card .testimonial__card_img {
     display: block;
+    margin-top: 1em;
+    margin-left: 1em;
   }
   .testimonials .testimonial__cards .testimonial__card .testimonial__card_user {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1.5em;
+    gap: 2em;
   }
   .testimonials .testimonial__cards .testimonial__card .testimonial__card_user .testimonial__card_user_info {
     display: flex;
     flex-direction: column;
+  }
+  .testimonials .testimonials__counter .testimonials__counter_arrows {
+    margin-left: 78%;
   }
   .footer .footer__title__buttons {
     display: flex;
@@ -1003,9 +1026,46 @@ nav {
     margin: 1em auto;
     width: 60%;
   }
+  .testimonials .testimonials__counter .testimonials__counter_arrows {
+    margin-left: 80%;
+  }
 }
 
 @media (min-width: 1400px) {
+  .nav .demoButton {
+    margin-left: 414px;
+  }
+  .topBanner .topBanner__header {
+    font-size: 65px;
+    margin-bottom: 50px;
+  }
+  .topBanner .topBanner__img {
+    width: 750px;
+    margin-right: 0;
+  }
+  .topBanner .bannerButtons {
+    margin-top: 50px;
+  }
+  .about {
+    width: 1117px;
+    height: 560px;
+  }
+  .about .about__img {
+    width: 477px;
+    margin-left: 3em;
+    height: 504px;
+  }
+  .about .about__header {
+    width: 475px;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: left;
+  }
+  .about .about__text {
+    width: 474px;
+    font-size: 18px;
+    line-height: 29px;
+  }
   .features {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1015,6 +1075,12 @@ nav {
   }
   .features .features__title {
     grid-area: Title;
+    margin-bottom: 50px;
+  }
+  .features .features__title .features__title_text {
+    width: 584px;
+    font-size: 18px;
+    line-height: 29px;
   }
   .features .features__search {
     grid-area: Search;
@@ -1027,6 +1093,41 @@ nav {
   }
   .features .features__security {
     grid-area: Security;
+  }
+  .testimonials {
+    width: 1117px;
+    height: 709px;
+    border-radius: 50px;
+  }
+  .testimonials .testimonials__header {
+    margin-top: 109px;
+    margin-left: 93px;
+    margin-bottom: 80px;
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 700;
+  }
+  .testimonials .testimonial__cards .testimonial__card {
+    width: 645px;
+    height: 330px;
+  }
+  .testimonials .testimonial__cards .testimonial__card .testimonial__card_user {
+    margin-top: 60px;
+    margin-left: 70px;
+  }
+  .testimonials .testimonial__cards .testimonial__card .testimonial__card_text {
+    width: 385px;
+    height: 130px;
+    margin-left: 190px;
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .testimonials .testimonials__counter {
+    align-items: flex-end;
+    margin-top: 63px;
+  }
+  .testimonials .testimonials__counter .testimonials__counter_arrows {
+    margin-left: 950px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

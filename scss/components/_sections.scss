@@ -112,6 +112,7 @@
     z-index: 1;
     width: 200%;
     display: flex;
+    gap: 1em;
     justify-content: center;
     transition: all 0.5s ease-in-out;
 
@@ -127,9 +128,11 @@
       }
 
       .testimonial__card_user {
-        padding: 0.5em 1.5em;
-        display: flex;
-        flex-direction: column;
+        .testimonial__card_user_info {
+          padding: 0.5em 1.5em;
+          display: flex;
+          flex-direction: column;
+        }
 
         .testimonial__card_user_name {
           font-family: $Lato;
@@ -154,21 +157,26 @@
 
   .testimonials__counter {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 0 1em;
 
     .testimonials__counter_pip {
       width: 5px;
       height: 5px;
+      margin-left: 10px;
       background-color: white;
       border-radius: 50%;
       margin-top: 1.5em;
     }
 
+    .active {
+      @include active;
+    }
+
     .testimonials__counter_arrows {
       margin-top: 1.5em;
       z-index: 3;
+      margin-left: 55%;
     }
   }
 }
@@ -196,6 +204,11 @@
 
   .footer__buttons {
     @include mobileButtons;
+    .demoButton {
+      img {
+        display: none;
+      }
+    }
   }
 
   .footer__branding {

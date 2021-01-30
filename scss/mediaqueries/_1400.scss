@@ -3,6 +3,60 @@
 //
 
 @media (min-width: 1400px) {
+  // Nav
+
+  .nav {
+    .demoButton {
+      margin-left: 414px;
+    }
+  }
+
+  // Top Banner
+
+  .topBanner {
+    .topBanner__header {
+      font-size: 65px;
+      margin-bottom: 50px;
+    }
+
+    .topBanner__img {
+      width: 750px;
+      margin-right: 0;
+    }
+
+    .bannerButtons {
+      margin-top: 50px;
+    }
+  }
+
+  // Info
+
+  .about {
+    width: 1117px;
+    height: 560px;
+
+    .about__img {
+      width: 477px;
+      margin-left: 3em;
+      height: 504px;
+    }
+
+    .about__header {
+      width: 475px;
+      font-size: 40px;
+      line-height: 52px;
+      text-align: left;
+    }
+
+    .about__text {
+      width: 474px;
+      font-size: 18px;
+      line-height: 29px;
+    }
+  }
+
+  // Features
+
   .features {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -15,6 +69,13 @@
 
     .features__title {
       grid-area: Title;
+      margin-bottom: 50px;
+
+      .features__title_text {
+        width: 584px;
+        font-size: 18px;
+        line-height: 29px;
+      }
     }
 
     .features__search {
@@ -31,6 +92,51 @@
 
     .features__security {
       grid-area: Security;
+    }
+  }
+
+  // Testimonials
+
+  .testimonials {
+    width: 1117px;
+    height: 709px;
+    border-radius: 50px;
+
+    .testimonials__header {
+      margin-top: 109px;
+      margin-left: 93px;
+      margin-bottom: 80px;
+      font-size: 40px;
+      line-height: 52px;
+      font-weight: 700;
+    }
+
+    .testimonial__cards {
+      .testimonial__card {
+        width: 645px;
+        height: 330px;
+
+        .testimonial__card_user {
+          margin-top: 60px;
+          margin-left: 70px;
+        }
+
+        .testimonial__card_text {
+          width: 385px;
+          height: 130px;
+          margin-left: 190px;
+          font-size: 18px;
+          line-height: 32px;
+        }
+      }
+    }
+    .testimonials__counter {
+      align-items: flex-end;
+      margin-top: 63px;
+
+      .testimonials__counter_arrows {
+        margin-left: 950px;
+      }
     }
   }
 }

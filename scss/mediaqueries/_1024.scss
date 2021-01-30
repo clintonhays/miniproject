@@ -152,19 +152,27 @@
 
         .testimonial__card_img {
           display: block;
+          margin-top: 1em;
+          margin-left: 1em;
         }
 
         .testimonial__card_user {
           display: flex;
           flex-direction: row;
           align-items: center;
-          gap: 1.5em;
+          gap: 2em;
 
           .testimonial__card_user_info {
             display: flex;
             flex-direction: column;
           }
         }
+      }
+    }
+
+    .testimonials__counter {
+      .testimonials__counter_arrows {
+        margin-left: 78%;
       }
     }
   }
